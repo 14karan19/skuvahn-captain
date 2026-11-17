@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "683814201142",
+    "project_id": "skuvahn-1f2a2",
+    "storage_bucket": "skuvahn-1f2a2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683814201142:android:f6de94864bfb04f8313597",
+        "android_client_info": {
+          "package_name": "com.skuvahn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683814201142-45h0tbg62ls2efvpiv9svd9k4sni29m3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skuvahn",
+            "certificate_hash": "b995b6fddd8182397ed6cb7ed780fa463289cae5"
+          }
+        },
+        {
+          "client_id": "683814201142-r7t6sfl4gei6khu79c1l9cqs5otagr68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8hXgfZv-Lq2wwGQOVJ8sPE34aetXKV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683814201142-r7t6sfl4gei6khu79c1l9cqs5otagr68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683814201142:android:bee1a0c463b07696313597",
+        "android_client_info": {
+          "package_name": "com.skuvahncaptain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683814201142-r7t6sfl4gei6khu79c1l9cqs5otagr68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8hXgfZv-Lq2wwGQOVJ8sPE34aetXKV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683814201142-r7t6sfl4gei6khu79c1l9cqs5otagr68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

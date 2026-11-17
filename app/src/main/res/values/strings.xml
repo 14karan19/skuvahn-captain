@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">SkuVahn Captain</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="version">Version 1.0.0</string>
+    <string name="powered_by">Powered By:</string>
+    <string name="company">SkuVahn Pvt. Ltd.</string>
+    <string name="close">Close</string>
+
+    <string name="enable_now">Enable Now</string>
+    <string name="required_for_this_app">Permission Required!</string>
+    <string name="gps_gfg_enabled">Location Permission</string>
+
+    <string name="login">Login</string>
+    <string name="login_with_existing">Login with your \nphone number.</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="mobile_hint">Enter your phone number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="otp_heading">Please enter the 6-digit code sent to your \nPhone Number</string>
+    <string name="resend">Resend OTP</string>
+    <string name="back"><u>Back</u></string>
+    <string name="verify_otp">Verify OTP</string>
+
+    <string name="password_hint">Enter Password</string>
+    <string name="login_with_phone"><u>Login with Phone</u></string>
+    <string name="login_with_email"><u>Login with Email</u></string>
+    <string name="sign_up"><u>Create account</u></string>
+    <string name="or_login">OR</string>
+
+    <!-- Mobile -->
+    <string name="enter_mobile">Please enter phone number</string>
+    <string name="enter_valid_mobile">Please enter a valid 10-digit phone number</string>
+    <string name="login_with_mobile_only">Please login using phone number only</string>
+
+    <!-- Email -->
+    <string name="enter_email">Please enter email address</string>
+    <string name="enter_valid_email">Please enter a valid email address</string>
+    <string name="login_with_email_password">Please login using email and password</string>
+
+    <!-- Password -->
+    <string name="enter_password">Please enter password</string>
+    <string name="password_min_length">Password must be at least 6 characters</string>
+    <string name="password_strength_error">
+    Password must contain uppercase, lowercase, number and special character
+</string>
+
+    <!-- Common -->
+    <string name="invalid_login_combination">
+    Please login using either phone number OR email and password
+</string>
+
+    <!-- Button -->
+    <string name="send">Send</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="email_optional_hint">Email (Optional)</string>
+    <string name="pincode_hint">Pincode</string>
+    <string name="address_one_hint">Address Line 1</string>
+    <string name="address_two_hint">Address Line 2</string>
+    <string name="profile">Profile</string>
+    <string name="bookings">Bookings</string>
+    <string name="children">Children</string>
+    <string name="live_streaming">Live Streaming</string>
+    <string name="emergency"><u>Emergency Contact: </u></string>
+    <string name="add_child">Add Child</string>
+    <string name="select_school">Select School</string>
+    <string name="classs">Class</string>
+    <string name="dob">Date of birth</string>
+    <string name="location">Location</string>
+    <string name="emergency_contact_name">Emergency Contact Name</string>
+    <string name="emergency_contact_number">Emergency Contact Number</string>
+    <string name="add_booking">Add Booking</string>
+    <string name="pickup_location">Pick up location</string>
+    <string name="select_child">Select Child</string>
+    <string name="addresses">Addresses</string>
+    <string name="landmark">Landmark (Optional)</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="select_location">Select Location</string>
+    <string name="title">Title (Home, Office etc)</string>
+    <string name="select_address">Select Address</string>
+    <string name="all_bookings">All Bookings</string>
+    <string name="history">History</string>
+    <string name="account">Account</string>
+    <string name="my_profile">My Profile</string>
+    <string name="help_information">Help /Information</string>
+    <string name="other">Other</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="logout">Logout</string>
+    <string name="my_addresses">My Addresses</string>
+    <string name="ulocation"><u>Location</u></string>
+    <string name="grade">Grade</string>
+    <string name="add_address">Add Address</string>
+    <string name="booking_details_h">Booking Details</string>
+    <string name="booking_details"><u>Booking Details</u></string>
+    <string name="child_details"><u>Child Details</u></string>
+    <string name="driver_details"><u>Driver Details</u></string>
+    <string name="are_you_sure">Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="select_route">Select Route</string>
+    <string name="google_maps_key">AIzaSyCX_8kNojY3N81Dsf2yT5fcO9GL_9EBg2U</string>
+    <string name="routes">Routes</string>
+    <string name="delete_account">Delete Account</string>
+</resources>

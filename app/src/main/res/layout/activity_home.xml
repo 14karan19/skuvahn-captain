@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/bannerViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_240sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_16sdp">
+
+                        <TextView
+                            android:id="@+id/tvGreeting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_bold"
+                            android:text="Good Morning, Karan"
+                            android:textColor="@color/text_primary"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvChildContext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_medium"
+                            android:text="How many bookings do you have today?"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="@dimen/_13ssp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:paddingHorizontal="@dimen/_16sdp">
+
+                        <!-- ITEM -->
+                        <LinearLayout
+                            android:id="@+id/layoutBookings"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_card"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_48sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_book_van" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosans_medium"
+                                android:text="Bookings"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                        <!-- ADDRESS -->
+                        <LinearLayout
+                            android:id="@+id/layoutRoutes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_card"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_48sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_routes" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosans_medium"
+                                android:text="Routes"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_16sdp">
+
+                        <!-- CHILDREN -->
+                        <LinearLayout
+                            android:id="@+id/layoutEarnings"
+                            android:layout_width="0dp"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_card"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_48sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_earnings" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosans_medium"
+                                android:text="Earnings"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                        <!-- PROFILE -->
+                        <LinearLayout
+                            android:id="@+id/layoutProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_card"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_48sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_person" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosans_medium"
+                                android:text="Profile"
+                                android:textColor="@color/text_primary"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutActiveBookingContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:fontFamily="@font/notosans_bold"
+                            android:text="Active Rides"
+                            android:textColor="@color/text_primary"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvActiveBookings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingHorizontal="@dimen/_16sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

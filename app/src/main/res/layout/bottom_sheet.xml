@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_8sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/darkest_gray"/>
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:fontFamily="@font/plexsans_medium"
+            android:textColor="@color/black"
+            android:text="@string/all_bookings"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rvValues"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

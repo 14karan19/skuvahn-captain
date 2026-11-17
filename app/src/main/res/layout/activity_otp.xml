@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/rootOtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_app_logo" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/plexsans_regular"
+                android:text="@string/otp_heading"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_12sdp" />
+
+            <in.aabhasjindal.otptextview.OtpTextView
+                android:id="@+id/etOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:elevation="2dp"
+                android:textColor="@color/black"
+                app:bar_active_color="@color/theme"
+                app:bar_enabled="false"
+                app:bar_error_color="@color/red_error"
+                app:bar_height="2dp"
+                app:box_margin_left="@dimen/_5sdp"
+                app:box_margin_right="@dimen/_5sdp"
+                app:height="@dimen/_35sdp"
+                app:length="6"
+                app:otp_box_background="@drawable/bg_otp"
+                app:otp_text_size="@dimen/_10ssp"
+                app:width="@dimen/_35sdp"
+                tools:ignore="MissingClass" />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="Invalid OTP"
+                android:textColor="@color/red_error"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnResend"
+                style="@style/button_cylinder_theme"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/bg_button_empty"
+                android:text="@string/resend" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plexsans_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="visible" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:shadowColor="@color/black"
+                app:cardBackgroundColor="@color/theme"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_3sdp"
+                tools:targetApi="p">
+
+                <TextView
+                    android:id="@+id/btnSend"
+                    style="@style/button_theme"
+                    android:text="@string/verify_otp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plexsans_semibold"
+                android:text="@string/back"
+                android:textColor="@color/darkest_gray"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_regular"
+                android:text="@string/version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_7ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_bold"
+                android:text="@string/powered_by"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_5ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_regular"
+                android:text="@string/company"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_5ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
+
+
